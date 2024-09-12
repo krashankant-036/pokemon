@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:  rgb(209, 192, 255);
+    overflow: hidden;
+  }
+  
+  /* Create a star effect */
+  .stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  }
+  
+  .stars::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200vw;
+    height: 200vh;
+    background: radial-gradient(rgb(73, 27, 27), rgba(255, 255, 255, 0));
+    background-size: 3px 3px;
+    background-position: 0 0;
+    animation: twinkling 200s infinite linear;
+  }
+  
+  @keyframes twinkling {
+    0% { background-position: 0 0; }
+    100% { background-position: -1000px -1000px; }
+  }
+  
