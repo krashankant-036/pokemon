@@ -46,7 +46,7 @@ function App() {
   }, []);
 
   if (!pokeman) {
-    return <div>Loading...</div>;
+    return <div>waiting For ...</div>;
   }
 
   return (
